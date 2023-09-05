@@ -1,0 +1,46 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 6rem;
+    background-color: aliceblue;
+
+    display: grid;
+    grid-template-columns: repeat(3, 36rem);
+    align-self: center;
+    justify-self: center;
+}
+
+p {
+    grid-column: 2 / 3;
+    align-self: center;
+}
+
+.side-bar {
+    background-color: bisque;
+    padding: 8rem 1rem;
+
+    grid-column: 3 / 4;
+}
+
+.img-container {
+    padding: 4rem;
+    background-color: orangered;
+}
+
+main {
+    padding: 12rem;
+    background-color: blanchedalmond;
+}
+
+footer {
+    padding: 6rem;
+    background-color: burlywood;
+}
+
+button {
+    padding: 1rem 2rem;
+}
