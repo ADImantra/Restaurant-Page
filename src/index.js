@@ -1,16 +1,36 @@
 import "./style.css";
+import banner from "./imgs/rest_banner.jpg"
 
 const createHeader = () => {
 
     const header = document.createElement(`header`);
+    const container = document.createElement(`div`);
     const title = document.createElement(`p`);
     const sideBar = document.createElement(`div`);
+    const linkList = document.createElement(`ul`)
 
+    const menu = document.createElement(`li`)
+    const ourMission = document.createElement(`li`)
+    const careers = document.createElement(`li`)
+    
+    menu.textContent = "Menu";
+    ourMission.textContent = "Our Mission";
+    careers.textContent = "Careers";
+
+    container.classList.add(`container`);
     sideBar.classList.add(`side-bar`);
-    title.textContent = "Restaurant Title"
+    linkList.classList.add(`links`);
 
-    header.appendChild(title)
-    header.appendChild(sideBar)
+    linkList.appendChild(menu)
+    linkList.appendChild(ourMission)
+    linkList.appendChild(careers)
+
+    title.textContent = "Le Pichet";
+
+    sideBar.appendChild(linkList)
+    container.appendChild(title);
+    container.appendChild(sideBar);
+    header.appendChild(container);
 
     return header;
 };
@@ -18,6 +38,11 @@ const createHeader = () => {
 const createImageDiv = () => {
     const imgDiv = document.createElement(`div`);
     imgDiv.classList.add(`img-container`)
+    
+    const restBanner = new Image();
+    restBanner.src = banner;
+
+    imgDiv.appendChild(restBanner)
 
     return imgDiv
 };

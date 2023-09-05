@@ -1,34 +1,85 @@
+:root {
+    --earthy-black: #0A0908;
+    --red-wine-color: #49111C;
+    --off-white-: #F2F4F3;
+    --earthy-brown: #A9927D;
+    --dark-earthy-brown: #5E503F;
+}
 
+@font-face {
+    font-family: "CafeFrancoise";
+    src: url("./fonts/Cafe Francoise_D.otf");
+    font-weight: 600;
+    font-style: normal;
+}
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: var(--earthy-brown);
 }
 
 header {
     padding: 6rem;
-    background-color: aliceblue;
+    background-color: var(--earthy-brown);
 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.container {
     display: grid;
-    grid-template-columns: repeat(3, 36rem);
-    align-self: center;
-    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9.5rem;
 }
 
 p {
-    grid-column: 2 / 3;
+    font-family: "CafeFrancoise";
+    color: var(--off-white-);
+    font-size: 4rem;
+
+    position: sticky;
+    top: 0;
+    grid-column: 1 / 2;
     align-self: center;
+
+    border-bottom: 1px solid var(--off-white-);
 }
 
-.side-bar {
-    background-color: bisque;
-    padding: 8rem 1rem;
-
+.container .side-bar {
     grid-column: 3 / 4;
+    
+    background-color: var(--earthy-brown);
+    color: var(--off-white-);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    padding: 4rem 1rem;
+ 
+}
+
+.container .side-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 4rem 1rem;
+    flex: 1;
+
+    text-align: end;
+
+    border-right: solid 1px var(--off-white-);
+
 }
 
 .img-container {
-    padding: 4rem;
-    background-color: orangered;
+    border: solid 2px var(--dark-earthy-brown);
 }
 
 main {
