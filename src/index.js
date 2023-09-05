@@ -9,10 +9,12 @@ const createHeader = () => {
     const sideBar = document.createElement(`div`);
     const linkList = document.createElement(`ul`)
 
+    const homePage = document.createElement(`li`)
     const menu = document.createElement(`li`)
     const ourMission = document.createElement(`li`)
     const careers = document.createElement(`li`)
     
+    homePage.textContent = "Home"
     menu.textContent = "Menu";
     ourMission.textContent = "Our Mission";
     careers.textContent = "Careers";
@@ -21,6 +23,7 @@ const createHeader = () => {
     sideBar.classList.add(`side-bar`);
     linkList.classList.add(`links`);
 
+    linkList.appendChild(homePage)
     linkList.appendChild(menu)
     linkList.appendChild(ourMission)
     linkList.appendChild(careers)
@@ -49,6 +52,14 @@ const createImageDiv = () => {
 
 const createMain = () => {
     const main = document.createElement(`main`);
+    const aboutUsHead = document.createElement(`h1`)
+    const aboutUsBody = document.createElement(`p`)
+
+    aboutUsHead.textContent = "About Us"
+    aboutUsBody.textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione non voluptatibus harum corrupti sint, eius in doloribus accusamus sit expedita magnam beatae, ipsam voluptatum itaque dolore fugit fuga, eum sed!"
+
+    main.appendChild(aboutUsHead)
+    main.appendChild(aboutUsBody)
 
     return main
 };
