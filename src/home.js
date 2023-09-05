@@ -19,6 +19,10 @@ const createHeader = () => {
     ourMission.textContent = "Our Mission";
     careers.textContent = "Careers";
 
+    homePage.addEventListener(`click`, () => {
+        
+    })
+
     container.classList.add(`container`);
     sideBar.classList.add(`side-bar`);
     linkList.classList.add(`links`);
