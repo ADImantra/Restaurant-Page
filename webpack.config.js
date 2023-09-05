@@ -3,11 +3,17 @@ const HtmlWebpackPlugin = require(`html-webpack-plugin`);
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    another: './src/home.js',
+    another: './src/menu.js',
+  },
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'Restaurant Page'
+        title: 'Le Pichet',
+        template: './src/index.html',
+        filename: './dist/index.html'
     }),
   ],
   module: {
@@ -27,7 +33,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
