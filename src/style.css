@@ -1,16 +1,9 @@
 :root {
     --earthy-black: #0A0908;
     --red-wine-color: #49111C;
-    --off-white-: #F2F4F3;
+    --off-white: #F2F4F3;
     --earthy-brown: #A9927D;
     --dark-earthy-brown: #5E503F;
-}
-
-@font-face {
-    font-family: "CafeFrancoise";
-    src: url("./fonts/Cafe Francoise_D.otf");
-    font-weight: 600;
-    font-style: normal;
 }
 
 * {
@@ -20,13 +13,20 @@
     list-style: none;
 }
 
+@font-face {
+    font-family: "CafeFrancoise";
+    src: url("./fonts/Cafe Francoise_D.otf");
+    font-weight: 600;
+    font-style: normal;
+}
+
 body {
-    background-color: var(--earthy-brown);
+    background-color: var(--off-white);
 }
 
 header {
     padding: 6rem;
-    background-color: var(--earthy-brown);
+    background-color: var(--off-white);
 
     display: flex;
     align-items: center;
@@ -34,15 +34,15 @@ header {
     
 }
 
-.container {
+header .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 9.5rem;
 }
 
-p {
+header .container p {
     font-family: "CafeFrancoise";
-    color: var(--off-white-);
+    color: var(--earthy-brown);
     font-size: 4rem;
 
     position: sticky;
@@ -50,21 +50,19 @@ p {
     grid-column: 1 / 2;
     align-self: center;
 
-    border-bottom: 1px solid var(--off-white-);
+    border-bottom: 1px solid var(--earthy-brown);
 }
 
-.container .side-bar {
+header .container .side-bar {
     grid-column: 3 / 4;
-    
-    background-color: var(--earthy-brown);
-    color: var(--off-white-);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
+    background-color: var(--off-white);
     padding: 4rem 1rem;
+
+    max-height: 460px;
  
 }
 
-.container .side-bar ul {
+header .container .side-bar ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -73,23 +71,39 @@ p {
     flex: 1;
 
     text-align: end;
-
-    border-right: solid 1px var(--off-white-);
+    
+    border-right: solid 1px var(--earthy-brown);
 
 }
 
+header .container .side-bar ul li {
+    transition: all 0.1s ease-in-out;
+    color: var(--earthy-brown);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+header .container .side-bar ul li:hover {
+    color: var(--dark-earthy-brown);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
 .img-container {
-    border: solid 2px var(--dark-earthy-brown);
+    box-shadow: 0 0 8px 8px var(--off-white) inset;
 }
 
 main {
     padding: 12rem;
-    background-color: blanchedalmond;
+    background-color: var(--off-white);
 }
 
 footer {
     padding: 6rem;
-    background-color: burlywood;
+    background-color: var(--off-white);
 }
 
 button {
