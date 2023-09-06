@@ -1,0 +1,93 @@
+:root {
+    --earthy-black: #0A0908;
+    --red-wine-color: #49111C;
+    --off-white: #F2F4F3;
+    --earthy-brown: #A9927D;
+    --dark-earthy-brown: #5E503F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "CafeFrancoise";
+    src: url("../fonts/Cafe Francoise_D.otf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+header {
+    padding-bottom: 2rem;
+    background-color: var(--off-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11.5rem;
+}
+
+header .container p {
+    font-family: "CafeFrancoise";
+    color: var(--earthy-brown);
+    font-size: 4rem;
+
+    position: sticky;
+    top: 0;
+    grid-column: 1 / 2;
+    align-self: center;
+
+    border-bottom: 1px solid var(--earthy-brown);
+}
+
+header .container .side-bar {
+    grid-column: 3 / 4;
+    background-color: var(--off-white);
+    padding: 4rem 1rem;
+    max-height: 420px;
+ 
+}
+
+header .container .side-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 4rem 1rem;
+    flex: 1;
+
+    text-align: end;
+    
+    border-right: solid 1px var(--earthy-brown);
+    max-height: 360px;
+
+}
+
+header .container .side-bar ul li {
+    transition: all 0.1s ease-in-out;
+    color: var(--earthy-brown);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+header .container .side-bar ul li:hover {
+    color: var(--dark-earthy-brown);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
