@@ -16,7 +16,7 @@ const createHeader = () => {
     
     homePage.textContent = "Home"
     menu.textContent = "Menu";
-    ourMission.textContent = "Our Mission";
+    ourMission.textContent = "Mission";
     careers.textContent = "Careers";
 
     homePage.addEventListener(`click`, () => {
