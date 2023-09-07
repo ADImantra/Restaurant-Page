@@ -1,0 +1,50 @@
+:root {
+    --earthy-black: #0A0908;
+    --red-wine-color: #49111C;
+    --off-white: #F2F4F3;
+    --earthy-brown: #A9927D;
+    --dark-earthy-brown: #5E503F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "CafeFrancoise";
+    src: url("../fonts/Cafe Francoise_D.otf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+
+    padding: 40px;
+    border: 2px solid var(--dark-earthy-brown);
+    min-width: 600px;
+}
+
+.menu-image {
+    grid-column: 0/1;
+    padding: 10px;
+    border: 1px solid var(--dark-earthy-brown);
+}

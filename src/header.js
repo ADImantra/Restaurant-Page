@@ -42,4 +42,4 @@ const createHeader = () => {
     return header;
 };
 
-export {createHeader}
+export { createHeader }
