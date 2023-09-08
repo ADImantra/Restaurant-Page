@@ -6,6 +6,15 @@
     --dark-earthy-brown: #5E503F;
 }
 
+@keyframes skew-x-shaking{
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+   }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -44,6 +53,23 @@ header .container p {
     font-family: "CafeFrancoise";
     color: var(--earthy-brown);
     font-size: 4rem;
+
+    position: sticky;
+    top: 0;
+    grid-column: 1 / 2;
+    align-self: center;
+
+    border-bottom: 1px solid var(--earthy-brown);
+}
+
+header .container p:hover {
+    font-family: "CafeFrancoise";
+    color: var(--earthy-brown);
+    font-size: 4rem;
+
+    animation-duration: 0.4s;
+    animation-name: skew-x-shaking;
+    animation-iteration-count: infinite;
 
     position: sticky;
     top: 0;

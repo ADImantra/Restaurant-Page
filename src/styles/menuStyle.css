@@ -24,9 +24,8 @@ body {
     background-color: var(--off-white);
 }
 
-.content {
+.menu-description {
     display: flex;
-    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -34,13 +33,40 @@ body {
     gap: 10px;
 }
 
+.menu-description h3 {
+    font-family: "CafeFrancoise";
+    text-align: center;
+    border-bottom: 1px solid var(--dark-earthy-brown);
+    max-width: 200px;
+}
+
+.menu-description p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
 .menu-item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr 2fr);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 
     padding: 40px;
-    border: 2px solid var(--dark-earthy-brown);
+    border-top: 1px solid var(--dark-earthy-brown);
+    border-bottom: 1px solid var(--dark-earthy-brown);
     min-width: 600px;
+    max-width: 200px;
 }
 
 .menu-image {
