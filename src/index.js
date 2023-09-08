@@ -1,6 +1,7 @@
 import { createHomePage } from "./home.js";
 import { createHeader } from "./header.js";
 import { createMenu } from "./menu.js";
+import { createMission } from "./mission.js";
 
 const firstLoad = () => {
     document.body.appendChild(createHeader());
@@ -35,7 +36,8 @@ menuButton.addEventListener(`click`, () => {
 })
 
 missionButton.addEventListener(`click`, () => {
-    console.log(`clicked`)
+    clearForm();
+    document.body.appendChild(createMission());
 
 })
 

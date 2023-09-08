@@ -18,10 +18,10 @@ const createHeader = () => {
     const careers = document.createElement(`li`)
     careers.id = "careers-link"
     
-    homePage.textContent = "Home"
-    menu.textContent = "Menu";
-    ourMission.textContent = "Mission";
-    careers.textContent = "Careers";
+    homePage.textContent = "rRetturn//Home"
+    menu.textContent = "noTe(craving)ds";
+    ourMission.textContent = "taskingTaskingKingstas";
+    careers.textContent = "YOUMUSTJOINJOIN";
 
     container.classList.add(`container`);
     sideBar.classList.add(`side-bar`);
@@ -32,7 +32,7 @@ const createHeader = () => {
     linkList.appendChild(ourMission)
     linkList.appendChild(careers)
 
-    title.textContent = "Le Pichet";
+    title.textContent = "Le P*1*chet";
 
     sideBar.appendChild(linkList)
     container.appendChild(title);

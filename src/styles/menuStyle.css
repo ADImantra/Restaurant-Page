@@ -73,4 +73,7 @@ body {
     grid-column: 0/1;
     padding: 10px;
     border: 1px solid var(--dark-earthy-brown);
+
+    max-width: 200px;
+    max-height: 200px;
 }

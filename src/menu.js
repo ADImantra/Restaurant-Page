@@ -1,4 +1,9 @@
 import "./styles/menuStyle.css";
+import crepe from "./imgs/deepCrepe.jpg"
+import croissant from "./imgs/deepCroissant.jpg"
+import souffle from "./imgs/deepSouffle.jpg"
+import coffee from "./imgs/drinkUS.jpg"
+import god from "./imgs/ourGod.jpg"
 
 const createMenu = () => {
     const content = document.createElement(`div`);
@@ -17,29 +22,41 @@ const createMenu = () => {
     const menuItem1 = document.createElement(`div`);
     menuItem1.classList.add(`menu-item`);
     menuItem1.id = `menu-item-1`;
+
     const menuModal1 = document.createElement(`div`);
     menuModal1.classList = `menu-image`;
     menuModal1.id = `menu-img-1`;
     menuItem1.appendChild(menuModal1);
+    const deepCrepe = new Image();
+    deepCrepe.src = crepe;
+    menuModal1.appendChild(deepCrepe)
+
     const menItemDes1 = document.createElement(`p`);
     menItemDes1.classList.add(`menu-item-description`);
     menItemDes1.textContent = `....AbstrakTo CrOOiSsant
     flakii, like fallen starrss - buttered whispers,
     ShHhS- served with--liquid night, "french'nexTension" ??~`;
+
     menuItem1.appendChild(menItemDes1);
 
     const menuItem2 = document.createElement(`div`);
     menuItem2.classList.add(`menu-item`);
     menuItem2.id = `menu-item-2`;
+
     const menuModal2 = document.createElement(`div`);
     menuModal2.classList = `menu-image`;
     menuModal2.id = `menu-img-2`;
     menuItem2.appendChild(menuModal2);
+    const croissant = new Image();
+    croissant.src = croissant;
+    menuModal2.appendChild(croissant)
+
     const menItemDes2 = document.createElement(`p`);
     menItemDes2.classList.add(`menu-item-description`);
     menItemDes2.textContent = `!!Enigma Crepe
     thin veilz fold 2 obsKUrE Truthz,
     WhiSPERs of smoked dreams or berry enchantments...`;
+
     menuItem2.appendChild(menItemDes2);
 
     const menuItem3 = document.createElement(`div`);
@@ -67,9 +84,7 @@ const createMenu = () => {
     menuItem4.appendChild(menuModal4);
     const menItemDes4 = document.createElement(`p`);
     menItemDes4.classList.add(`menu-item-description`);
-    menItemDes4.textContent = `....AbstrakTo CrOOiSsant
-    flakii, like fallen starrss - buttered whispers,
-    ShHhS- served with--liquid night, "french'nexTension" ??~`;
+    menItemDes4.textContent = `NoTTrigHt FISH so-so-so GLow coming to Us we areitisinthe HEREHEREHERE -- // -- ---//--/-/---/-`;
     menuItem4.appendChild(menItemDes4);
 
     const menuItem5 = document.createElement(`div`);
