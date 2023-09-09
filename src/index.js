@@ -2,6 +2,7 @@ import { createHomePage } from "./home.js";
 import { createHeader } from "./header.js";
 import { createMenu } from "./menu.js";
 import { createMission } from "./mission.js";
+import { createCareer } from "./career.js";
 
 const firstLoad = () => {
     document.body.appendChild(createHeader());
@@ -42,7 +43,8 @@ missionButton.addEventListener(`click`, () => {
 })
 
 careersButton.addEventListener(`click`, () => {
-    console.log(`clicked`)
+    clearForm();
+    document.body.appendChild(createCareer());
 
 })
 
