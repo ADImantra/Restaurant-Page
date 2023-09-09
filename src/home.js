@@ -16,8 +16,8 @@ const createHomePage = () => {
     const main = document.createElement(`main`);
     const aboutUsHead = document.createElement(`h1`)
     const aboutUsBody = document.createElement(`p`)
-    aboutUsHead.textContent = "About Us"
-    aboutUsBody.textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione non voluptatibus harum corrupti sint, eius in doloribus accusamus sit expedita magnam beatae, ipsam voluptatum itaque dolore fugit fuga, eum sed!"
+    aboutUsHead.textContent = "WEdON0TKNOWY0u"
+    aboutUsBody.textContent = "YouAre(welcome)notTOhere come come come DRr11Nk. Sl0wTired??1? REVOLUTION REVOLUTION! kneeeL on // BARRIC4DE // "
     main.appendChild(aboutUsHead)
     main.appendChild(aboutUsBody)
 
@@ -26,8 +26,8 @@ const createHomePage = () => {
     const footer = document.createElement(`footer`);
     const orderButton = document.createElement(`button`)
     const reserveButton = document.createElement(`button`)
-    orderButton.textContent = `Order`
-    reserveButton.textContent = `Reserve`
+    orderButton.textContent = `WE COME`
+    reserveButton.textContent = `TO YOU`
     footer.appendChild(orderButton)
     footer.appendChild(reserveButton)
 

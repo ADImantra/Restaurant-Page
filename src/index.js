@@ -5,7 +5,7 @@ import { createMission } from "./mission.js";
 
 const firstLoad = () => {
     document.body.appendChild(createHeader());
-    document.body.appendChild(createMenu());
+    document.body.appendChild(createHomePage());
 }
 
 const clearForm = () => {
